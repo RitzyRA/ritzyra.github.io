@@ -85,6 +85,7 @@
             font-weight: 700;
             color: #5558c9;
             margin-bottom: 15px;
+            padding-left: 5px;
         }
 
         .skills ul {
@@ -110,7 +111,7 @@
         }
 
         .skills ul li .skill_item .icon {
-            background: url("sprite.png") no-repeat -1px 0;
+            background: url("IMG/sprite.png") no-repeat -1px 0;
             width: 20px;
             height: 22px;
             margin: 0 auto 5px;
@@ -172,11 +173,18 @@
         .full_info {
             padding-top: 15px;
             height: 295px;
-            overflow: auto;
+            /* overflow: auto; */
         }
 
         .info_wrap {
             padding-left: 5px;
+        }
+
+        .full_info_item {
+            display: flex;
+            flex-direction: column;
+            overflow:auto;
+            height: 250px;
         }
 
         .info_wrap ul li {
@@ -234,6 +242,9 @@
     background: #f1f1f1;
     font-weight: bold;
     border: solid 1px rgb(224, 224, 224);
+    width: 33.3%;
+    text-align: center;
+    cursor: pointer;
 }
 
 .full_info_wrap .full_info .full_info_item {
@@ -263,7 +274,7 @@
 
             <div class="profile_info">
                 <div class="profile_img">
-                    <img src="unnamed.png" alt="profile_img">
+                    <img src="IMG/unnamed.png" alt="profile_img">
                 </div>
                 <div class="profile_data">
                     <p class="name">Rita A.</p>
