@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <style>
+        @import url("style.css");
+
+        .gc {
+            display: grid;
+            height: 75vh;
+            margin-top: 1rem;
+            margin-bottom: 1 rem;
+            justify-content: center;
+            grid-template-areas:
+                "header1 header2 header3"
+                "section1 section2 section3"
+                "header4 header5 header6"
+                "section4 section5 section6";
+            grid-template-rows: 15% 30% 20% 40%;
+            grid-template-columns: 20% 20% 20%;
+            grid-gap: 0 2rem;
+        }
+
+        .gi {
+            /* background-color: rgba(218, 198, 198, 0.1); */
+            display: grid;
+            justify-items: left;
+            align-items: top;
+            padding: 1rem;
+            text-align: justify;
+            font-size: 0.8rem;
+            color: #a0897f;
+            overflow: auto;
+        }
+
+        .Hgi {
+            font-size: 1.5rem;
+            text-align: center;
+            padding-bottom: 1rem;
+            justify-items: center;
+        }
+
+        .Haboutme {
+            grid-area: header1;
+        }
+
+        .Hspecialties {
+            grid-area: header2;
+        }
+
+        .Hlanguages {
+            grid-area: header3;
+        }
+
+        .aboutme {
+            grid-area: section1;
+            max-height: 10%;
+        }
+
+        .specialties {
+            grid-area: section2;
+        }
+
+        .languages {
+            grid-area: section3;
+        }
+
+        .Hskills {
+            grid-area: header4;
+        }
+
+        .Heducation {
+            grid-area: header5;
+        }
+
+        .Hhobbies {
+            grid-area: header6;
+        }
+        .skills {
+            grid-area: section4;
+        }
+
+        .education {
+            grid-area: section5;
+        }
+
+        .hobbies {
+            grid-area: section6;
+        }
+        .inline {
+            justify-content: center;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav">
+        <ul>
+            <li>
+                <a href="/index.html">PRADŽIA</a>
+            </li>
+            <li>
+                <a href="/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="/html.html">HTML, CSS</a></li>
+                    <li><a href="/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp">C#</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contacts.html">KONTAKTAI</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <header class="small-header">
+        <div class="bg-image"></div>
+        <div class="header-text">
+            <h1>CV</h1>
+        </div>
+    </header>
+    <main class="gc">
+        <section class="gi Hgi HaboutME"><i class="fas fa-user-edit fa-2x"></i>Apie mane</section>
+        <section class="gi Hgi Hspecialties"><i class="fas fa-laptop fa-2x"></i>Specializacijos</section>
+        <section class="gi Hgi Hlanguages"><i class="fas fa-globe fa-2x"></i>Kalbos</section>
+        <section class="gi aboutME">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, reprehenderit ex qui consequuntur similique totam ad repudiandae saepe officia non dolorum suscipit ut alias nemo eaque fugiat distinctio aperiam tempore quasi quo ullam voluptatum. Voluptates, neque dolorem recusandae molestias asperiores blanditiis quam excepturi reiciendis, quasi totam ipsam quod consectetur voluptatibus.</section>
+        <section class="gi specialties">
+            <ul>
+                <li>Pirma specializacija</li>
+                <li>Antra specializacija</li>
+                <li>Trečia specializacija</li>
+                <li>Ketvirta specializacija</li>
+            </ul>
+        </section>
+        <section class="gi languages">
+            <ul>
+                <li>Lietuvių - gimtoji</li>
+                <li>Anglų - C1</li>
+                <li>Vokiečių - pagrindai</li>
+            </ul>
+        </section>
+        <section class="gi Hgi Hskills"><i class="fas fa-trophy fa-2x"></i>Įgūdžiai</section>
+        <section class="gi Hgi Heducation"><i class="fas fa-briefcase fa-2x"></i>Išsilavinimas ir darbo patirtis</section>
+        <section class="gi Hgi Hhobbies"><i class="far fa-thumbs-up fa-2x"></i>Pomėgiai</section>
+        <section class="gi skills">
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+                <li>.NET</li>
+            </ul>
+        </section>
+        <section class="gi education">
+            <ul>
+                <li>2021 04 - 2021 11</li>
+                <section>UAB Baltijos technologijų institutas</section>
+                <li>2017 06 - dabar</li>
+                <section>Įmonė3</section>
+                <li>2014 - 2017</li>
+                <section>Įmonė2</section>
+                <li>2011 - 2014</li>
+                <section>Įmonė1</section>
+                <li>2011 - 2013</li>
+                <section>KTU - Magistras</section>
+                <li>2007 - 2011</li>
+                <section>KTU - Bakalauras</section>
+                <li>2007</li>
+                <section>Gimnazija</section>
+            </ul>
+        </section>
+        <section class="gi hobbies">
+            <i class="fas inline fa-tv fa-2x"></i> <section>TV, serialai</section>           
+            <i class="fas inline fa-book-open fa-2x"></i><section>Knygos</section>
+            <i class="fas inline fa-car-alt fa-2x"></i><section>Vairavimas, kelionės</section>
+        
+        </section>
+        
+    </main>
+
+</body>
+
+</html>
