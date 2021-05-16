@@ -1,16 +1,43 @@
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sveiki!</title>
+    <title>C#</title>
     <style>
         @import url("style.css");
-        h1 {
-            margin: 1.5rem;
+        section {
+            display: grid;
+            text-align: center;
+            height: 84vh;
+            width: 100%;
+            color: #fff;
+            background: linear-gradient(-45deg,
+                    #ee7752,
+                    #e73c7e,
+                    #23a6d5,
+                    #23d5ab);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+            align-items: center;
         }
+        @keyframes change {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
     </style>
 </head>
 
@@ -38,13 +65,16 @@
         </ul>
     </nav>
 
-    <header>
+    <header class="small-header">
         <div class="bg-image"></div>
-        <div class="bg-text">
-            <h1>Mano vardas - Rita</h1>
-            <p>Ir aš esu būsima programuotoja!</p>
+        <div class="header-text">
+            <h1>C#</h1>
         </div>
     </header>
+
+<section>
+    To be continued...
+</section>
 
 </body>
 
