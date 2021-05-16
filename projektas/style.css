@@ -107,7 +107,11 @@ header {
 }
 
 .small-header {
-    height: 10vh;
+    margin-top: 0.1rem;
+    height: 5rem;
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
 }
 
 .bg-image {
@@ -139,18 +143,16 @@ header {
     color: white;
     font-weight: bold;
     position: absolute;
-    top: 11%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    padding: 20px;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    padding: 0px;
     text-align: center;
     text-shadow: 2px 2px #b2998e;
 }
 h1 {
     font-size: 2rem;
     text-align: center;
-    margin: 1.5rem;
 }
 
 h2 {
@@ -171,22 +173,18 @@ article {
     color: #a0897f;
 }
 
-.back_to_top_btn_wrapper {
-    margin: 5rem 1rem 10rem 1rem;
-    position: sticky;
-    top: calc(100vh - 5rem);
-    float: right;
-    right: 2rem;
-    bottom: 1rem;
+::-webkit-scrollbar {
+    width: 10px;
 }
-.back_to_top_btn a {
-    color: rgba(178, 153, 142, 0.80);
+
+::-webkit-scrollbar-track {
+background: #e7dfdc; 
 }
-.back_to_top_btn:hover {
-    transform: scale(1.5);
-    transition: 1s ease;
-    color: #b2998e;
+
+::-webkit-scrollbar-thumb {
+background: rgba(178, 153, 142, 0.80); 
 }
-.back_to_top_btn:not(:hover) {
-    transition: 1s ease;
+
+::-webkit-scrollbar-thumb:hover {
+background: #b2998e; 
 }
