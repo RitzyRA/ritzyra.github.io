@@ -15,7 +15,7 @@
             top: 17%;
             left: 0;
             width: 100%;
-            height: 83vh;
+            height: inherit;
             background: linear-gradient(123deg,
                     rgb(255, 255, 255) 0%,
                     rgba(124, 63, 48, 0.664) 100%);
@@ -25,13 +25,14 @@
 
         .gc {
             display: grid;
-            height: 82vh;
-            margin-top: 1rem;
-            margin-bottom: 1 rem;
+            height: 100%;
+            margin-top: 2%;
+            margin-bottom: 0;
             justify-content: center;
+            align-content: center;
             grid-template-areas:
                 "header1 header2 header3";
-            grid-template-columns: 30% 30% 30%;
+            grid-template-columns: 25% 25% 25%;
             grid-gap: 0 2rem;
         }
 
@@ -41,13 +42,12 @@
             justify-items: left;
             align-items: top;
             padding: 1rem;
-            line-height: 10rem;
             text-align: justify;
             color: rgba(160, 137, 127, 0.604);
             text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
 
             width: 100%;
-            height: 90%;
+            height: 100%;
             border-radius: 25px;
             margin: auto;
             position: relative;
@@ -56,67 +56,75 @@
                     rgba(255, 255, 255, 0.6) 0%,
                     rgba(168, 145, 135, 0.233) 42%,
                     rgba(160, 137, 127, 0.604) 100%);
-            
+
             text-align: center;
             justify-items: center;
-        }
-section {
-    font-size: 1.5rem;
-    line-height: 3rem;
-}
-#icon {
-    padding: 5rem;
-}
-.gmap_canvas {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-.website:not(:visited), .website:visited {
-    /* text-decoration: none; */
-    /* color: rgb(160, 137, 127); */
-    color: rgba(255, 255, 255, 0.6);
-    text-shadow: none;
-    border: 2px solid rgba(255, 255, 255, 0.6);
-    border-radius: 10px;
-    padding: 0.7rem;
-    box-shadow: 5px 5px rgb(160, 137, 127);
-        
-}
-.email:not(:visited), .email:visited {
-    text-decoration: underline;
-    color: rgb(160, 137, 127);
-    text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
-        
-}
-
-        .Hgi {
-
+            overflow: auto;
         }
 
-        .Hgi:hover {
+        section {
+            font-size: 1.5rem;
+            line-height: 4vh;
+        }
+
+        #icon {
+            padding: 7vh;
+        }
+
+        .gmap_canvas {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+        }
+
+        .website:not(:visited),
+        .website:visited {
+            color: rgba(255, 255, 255, 0.6);
+            text-shadow: none;
+            border: 2px solid rgba(255, 255, 255, 0.6);
+            border-radius: 10px;
+            padding: 0.7rem;
+            box-shadow: 5px 5px rgb(160, 137, 127);
+
+        }
+        .website:hover {
+            color: rgb(160, 137, 127);
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+
+        .email:not(:visited),
+        .email:visited {
+            /* text-decoration: underline; */
+            color: rgb(160, 137, 127);
+            text-shadow: 1px 1px rgba(255, 255, 255, 0.6);
+        }
+        .social {
+            line-height: 10rem;
+            padding: 0.3rem;
+        }
+        .email:hover , .social:hover {
+            color: rgba(255, 255, 255, 0.6);
+            text-shadow: none;
+        }
+
+                /* .Hgi:hover {
             opacity: 1;
             transition: 0.2s ease;
         }
 
         .Hgi:not(:hover) {
             transition: 0.2s ease;
-        }
+        } */
 
-        .Hhtml {
+        .address {
             grid-area: header1;
-
-
         }
 
-        .Hjs {
+        .phone_web {
             grid-area: header2;
-
         }
 
-        .Hcs {
+        .email_social {
             grid-area: header3;
-
         }
     </style>
 </head>
@@ -125,21 +133,21 @@ section {
     <nav class="nav">
         <ul>
             <li>
-                <a href="/index.html">PRADŽIA</a>
+                <a href="/projektas/index.html">PRADŽIA</a>
             </li>
             <li>
-                <a href="/cv.html">CV</a>
+                <a href="/projektas/cv.html">CV</a>
             </li>
             <li>
-                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <a href="/projektas/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
                 <ul>
-                    <li><a href="/html.html">HTML, CSS</a></li>
-                    <li><a href="/js.html">JAVASCRIPT</a></li>
-                    <li><a href="/c_sharp">C#</a></li>
+                    <li><a href="/projektas/html.html">HTML, CSS</a></li>
+                    <li><a href="/projektas/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/projektas/c_sharp">C#</a></li>
                 </ul>
             </li>
             <li>
-                <a href="/contacts.html">KONTAKTAI</a>
+                <a href="/projektas/contacts.html">KONTAKTAI</a>
             </li>
 
         </ul>
@@ -152,28 +160,49 @@ section {
         </div>
     </header>
     <main class="gc">
-        <section class="gi Hgi Hhtml">
+        <section class="gi address">
             <article>
-            <i class="fas fa-map-marked-alt fa-4x" id="icon"></i>
-            <section>Gatvės g. 100-100, Kaunas, Lietuva</section>
-            <div class="mapouter"><div class="gmap_canvas"><iframe width="350" height="297" id="gmap_canvas" src="https://maps.google.com/maps?q=Kaunas%2C%20Lithuania&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="http://embedmaps.info">Embed Maps</a><br><style>.mapouter{position:relative;text-align:right;height:297px;width:345px;}</style><a href="http://embedmaps.info">Embed Maps Info</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:297px;width:350px;}</style></div></div>
-        </article>
+                <i class="fas fa-map-marked-alt fa-4x" id="icon"></i>
+                <section>Gatvės g. 100-100, Kaunas, Lietuva</section>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="100%" height="297" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Kaunas%2C%20Lithuania&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 40vh;
+                                width: 100%;
+                            }
+                        </style>
+                        <style>
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 40vh;
+                                width: 100%;
+                            }
+                        </style>
+                    </div>
+                </div>
+            </article>
         </section>
-        <section class="gi Hgi Hjs">
+        <section class="gi phone_web">
             <article>
-            <i class="fas fa-phone-alt fa-4x" id="icon"></i>
-            <section>+3706****370</section>
-            <i class="fas fa-globe-europe fa-4x" id="icon"></i>
-            <section><a href="https://ritzyra.github.io" class="website">RitzyRA website</a></section>
-        </article>
+                <i class="fas fa-phone-alt fa-4x" id="icon"></i>
+                <section>+3706****370</section>
+                <i class="fas fa-globe-europe fa-4x" id="icon"></i>
+                <section><a href="https://ritzyra.github.io/projektas/index.html" class="website">RitzyRA website</a></section>
+            </article>
         </section>
-        <section class="gi Hgi Hcs">
+        <section class="gi email_social">
             <article>
                 <i class="fas fa-at fa-4x" id="icon"></i>
-                <section><a href="sentto:vardas.pavarde@gmail.com" class="email">vardas.pavarde@gmail.com</a></section>
-                <a href="http://www.facebook.com" class="email"><i class="fab fa-facebook-square fa-3x"></i></a>
-                <a href="http://www.facebook.com" class="email"><i class="fab fa-twitter-square fa-3x"></i></a>
-                <a href="http://www.facebook.com" class="email"><i class="fab fa-instagram-square fa-3x"></i></a>
+                <section><a href="sendto:vardas.pavarde@gmail.com" class="email">vardas.pavarde@gmail.com</a></section>
+                <a href="http://www.facebook.com" class="email social"><i class="fab fa-facebook-square fa-3x"></i></a>
+                <a href="http://www.twitter.com" class="email social"><i class="fab fa-twitter-square fa-3x"></i></a>
+                <a href="http://www.instagram.com" class="email social"><i class="fab fa-instagram-square fa-3x"></i></a>
             </article>
         </section>
     </main>
