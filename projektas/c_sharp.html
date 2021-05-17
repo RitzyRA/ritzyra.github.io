@@ -8,36 +8,39 @@
     <title>C#</title>
     <style>
         @import url("style.css");
-        section {
+
+        body {
+            height: 100vh;
+        }
+
+        .textonly {
             display: grid;
             text-align: center;
             height: 84vh;
             width: 100%;
+            align-items: center;
             color: #fff;
+            text-shadow: 1px 1px 2px #ee7752;
+            font-weight: bold;
+            position: sticky;
+            transform: translate(0%, -100%);
+
+        }
+
+        .aurora {
+            display: grid;
+            height: 84vh;
+            width: 100%;
             background: linear-gradient(-45deg,
                     #ee7752,
                     #e73c3c,
                     #ecd79b,
                     #ffffff);
-            background-size: 400% 400%;
+            background-size: 100% 100%;
+            filter: blur(8px);
+            opacity: 0.7;
             position: relative;
-            animation: change 10s ease-in-out infinite;
-            align-items: center;
         }
-        @keyframes change {
-            0% {
-                background-position: 0 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0 50%;
-            }
-        }
-
     </style>
 </head>
 
@@ -72,9 +75,11 @@
         </div>
     </header>
 
-<section>
-    To be continued...
-</section>
+    <section class="aurora">
+    </section>
+    <section class="textonly">
+        To be continued...
+    </section>
 
 </body>
 
