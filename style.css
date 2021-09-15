@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Open Sans;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgba(178, 153, 142, 0.80);
+    margin: inherit;
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+    padding: 0;
+    color: #e7dfdc;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav_full ul {
+    *zoom: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
+
+.nav_full ul:before,
+.nav_full ul:after {
+    content: "";
+    display: table;
+}
+
+.nav_full ul:after {
+    clear: both;
+}
+
+.nav_full ul>li {
+    float: left;
+    position: relative;
+}
+
+.nav_full a {
+    display: block;
+    padding: 1rem 2rem;
+    line-height: 1.2em;
+    color: #e7dfdc;
+    text-decoration: none;
+}
+
+.nav_full a:hover {
+    background: #b2998e;
+    color: white;
+}
+
+.nav_full li:hover {
+    background-color: #b2998e;
+}
+
+.nav_full li ul li {
+    width: 200px;
+}
+
+.nav_full li ul a {
+    border: none;
+    color: #e7dfdc;
+}
+
+.nav_full li ul a:hover {
+    background: #b2998e;
+    color: white;
+}
+
+.nav_full li ul {
+    background: #b2998e;
+    position: absolute;
+    left: 0;
+    top: 3.2rem;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -webkit-transition: 200ms ease;
+    -moz-transition: 200ms ease;
+    -o-transition: 200ms ease;
+    transition: 200ms ease;
+}
+
+.nav_full ul>li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.nav_mobile, .nav_mobile_only {
+    display: none;
+}
+
+header {
+    margin: 0rem;
+    font-size: 2.5rem;
+    text-align: center;
+    height: 92vh;
+}
+
+
+.small-header {
+    margin-top: 0.1rem;
+    height: 5rem;
+    display: flexbox;
+    justify-content: center;
+    align-content: center;
+}
+
+.bg-image {
+    background: url(photo-1519750783826-e2420f4d687f.jpg);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image.index-bg {
+    min-height: 14rem;
+}
+
+.bg-text {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.header-text {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    padding: 0px;
+    text-align: center;
+    text-shadow: 2px 2px #b2998e;
+}
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    color: #a0897f;
+}
+
+div {
+    margin: 0rem;
+}
+
+p {
+    font-size: 1rem;
+}
+article {
+    font-size: 1rem;
+    color: #a0897f;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+background: #e7dfdc; 
+}
+
+::-webkit-scrollbar-thumb {
+background: rgba(178, 153, 142, 0.80); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #b2998e; 
+}
+
+/* For mobile */
+@media only screen and (max-width: 560px) {
+
+    .nav_full {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: grid;
+        z-index: 1;
+        position: fixed;
+        top: -19rem;
+        width: 100%;
+        height: 19rem;
+        background: rgba(178, 153, 142);
+    }
+
+    .nav_mobile ul {
+        list-style: none;
+    }
+
+    .nav_mobile ul a {
+        display: block;
+        /* height: 100%; */
+        width: 100vw;
+        line-height: 3rem;
+        font-size: 1.1rem;
+        color: white;
+        padding-left: 1.5rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        border-bottom: 1px solid #b2998e;
+        transition: 0.1s;
+    }
+
+    .nav_mobile li:hover a {
+        background-color: #c4aba1;
+        color: white;
+    }
+
+    .nav_mobile i {
+        margin-right: 0.5rem;
+    }
+
+    #nav_mobile_checkbox {
+        display: none;
+    }
+
+    .nav_mobile_only {
+        display: inherit;
+    }
+
+    label #burger_btn,
+    label #cancel_btn {
+        z-index: 1;
+        position: absolute;
+        cursor: pointer;
+        background: rgba(178, 153, 142, 0.80);
+        border-radius: 0.2rem;
+        font-size: 2rem;
+        top: 1rem;
+    }
+    label #burger_btn {
+            right: 1rem;
+            color: white;
+            padding: 6px 12px;
+            transition: all 0.5s;
+    }
+    label #burger_btn:hover {
+            background: #b2998e;
+            color: white;
+    }
+    label #cancel_btn {
+            font-size: 1rem;
+            /* border: 0.5px solid white; */
+            top: -19rem;
+            z-index: 2;
+            color: white;
+            padding: 6px 12px;
+            transition: all 0.5s;
+    }
+    label #cancel_btn:hover {
+            transform: scale(1.5);
+            background-color: rgba(255, 255, 255, 0.4);
+            color: #b2998e;
+    }
+    #nav_mobile_checkbox:checked ~ .nav_mobile {
+            top: 0;
+            transition: all 0.5s;
+    }
+    #nav_mobile_checkbox:not(:checked) ~ .nav_mobile {
+            transition: all 0.2s;
+    }
+    #nav_mobile_checkbox:checked ~ label #burger_btn {
+            top: 0;
+            opacity: 0;
+            pointer-events: none;
+    }
+    #nav_mobile_checkbox:checked ~ label #cancel_btn {
+            top: 0.75rem;
+            right: 1rem;
+    }
+
+    .header-text {
+            top: 1rem;
+    }
+
+    .header_mobile {
+        /* margin: 0rem;
+        font-size: 2.5rem;
+        text-align: center; */
+        height: 100%;
+    }
+}

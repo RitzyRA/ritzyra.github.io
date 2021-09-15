@@ -1,0 +1,80 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sveiki!</title>
+    <style>
+        @import url("style.css");
+
+        h1 {
+            margin: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="nav_full">
+        <ul>
+            <li>
+                <a href="/index.html">PRADŽIA</a>
+            </li>
+            <li>
+                <a href="/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="/html.html">HTML, CSS</a></li>
+                    <li><a href="/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp.html">C#</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contacts.html">KONTAKTAI</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- For mobile -->
+    <input type="checkbox" id="nav_mobile_checkbox" class="nav_mobile_only" />
+    <label for="nav_mobile_checkbox" class="nav_mobile_only">
+        <i class="fas fa-bars" id="burger_btn"></i>
+        <i class="fas fa-times" id="cancel_btn"></i>
+    </label>
+    <nav class="nav_mobile">
+        <ul>
+            <li>
+                <a href="/index.html">PRADŽIA</a>
+            </li>
+            <li>
+                <a href="/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="/html.html">HTML, CSS</a></li>
+                    <li><a href="/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp.html">C#</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contacts.html">KONTAKTAI</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- End of for mobile -->
+
+    <header class="header_mobile">
+        <div class="bg-image index-bg"></div>
+        <div class="bg-text">
+            <h1>Mano vardas - Rita</h1>
+            <p>Ir aš esu programuotoja!</p>
+        </div>
+    </header>
+
+</body>
+
+</html>

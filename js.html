@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <style>
+        @import url("style.css");
+        section {
+            display: grid;
+            text-align: center;
+            height: 84vh;
+            width: 100%;
+            color: #fff;
+            text-shadow: 1px 1px 2px #ee7752;
+            font-weight: bold;
+            background: linear-gradient(-45deg,
+                    #ee7752,
+                    #e73c3c,
+                    #ecd79b,
+                    #ffffff);
+            background-size: 400% 400%;
+            position: relative;
+            animation: change 10s ease-in-out infinite;
+            align-items: center;
+        }
+        @keyframes change {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="nav_full">
+        <ul>
+            <li>
+                <a href="/index.html">PRADŽIA</a>
+            </li>
+            <li>
+                <a href="/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="/html.html">HTML, CSS</a></li>
+                    <li><a href="/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp.html">C#</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contacts.html">KONTAKTAI</a>
+            </li>
+
+        </ul>
+    </nav>
+<!-- For mobile -->
+    <input type="checkbox" id="nav_mobile_checkbox" class="nav_mobile_only" />
+    <label for="nav_mobile_checkbox" class="nav_mobile_only">
+        <i class="fas fa-bars" id="burger_btn"></i>
+        <i class="fas fa-times" id="cancel_btn"></i>
+    </label>
+    <nav class="nav_mobile">
+        <ul>
+            <li>
+                <a href="/index.html">PRADŽIA</a>
+            </li>
+            <li>
+                <a href="/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="/html.html">HTML, CSS</a></li>
+                    <li><a href="/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp.html">C#</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contacts.html">KONTAKTAI</a>
+            </li>
+
+        </ul>
+    </nav>
+<!-- End of for mobile -->
+
+    <header class="small-header">
+        <div class="bg-image"></div>
+        <div class="header-text">
+            <h1>JavaScript</h1>
+        </div>
+    </header>
+
+<section>
+    To be continued...
+</section>
+
+</body>
+
+</html>

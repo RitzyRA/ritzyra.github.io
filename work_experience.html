@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darbai</title>
+    <style>
+        @import url("style.css");
+
+        .gc {
+            display: grid;
+            height: 70vh;
+            margin: 5% auto;
+            justify-content: center;
+            grid-template-areas:
+                "header1 header2 header3";
+            grid-template-columns: 40% 19% 25%;
+            grid-gap: 0 2rem;
+        }
+
+        .gi {
+            /* background-color: rgba(218, 198, 198, 0.1); */
+            display: grid;
+            justify-items: left;
+            align-items: center;
+            padding: 1rem;
+            text-align: justify;
+            font-size: 0.8rem;
+            color: #a0897f;
+        }
+
+        .Hgi {
+            font-size: 1.5rem;
+            text-align: center;
+            padding-bottom: 1rem;
+            justify-items: center;
+        }
+
+        .Hgi:hover {
+            opacity: 1;
+            transition: 0.2s ease;
+        }
+
+        .Hgi:not(:hover) {
+            transition: 0.2s ease;
+        }
+
+        .Hhtml {
+            grid-area: header1;
+            background-image: url(Daco_1270973.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            background-position: center;
+
+        }
+
+        .Hjs {
+            grid-area: header2;
+            background-image: url(clipart4707396.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            background-position: center;
+        }
+
+        .Hcs {
+            grid-area: header3;
+            background-image: url(https://iconape.com/wp-content/files/sh/51404/svg/c--4.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            opacity: 0.5;
+            background-position: center;
+        }
+
+        /* For mobile */
+        @media only screen and (max-width: 1100px) {
+            .gc {
+                display: grid;
+                margin: 2rem;
+                justify-content: center;
+                grid-template-areas:
+                    "header1"
+                    "header2"
+                    "header3";
+                grid-template-rows: 30% 30% 30%;
+                grid-template-columns: 100%;
+                grid-gap: 2rem 0;
+            }
+    </style>
+</head>
+
+<body>
+    <nav class="nav_full">
+        <ul>
+            <li>
+                <a href="/index.html">PRADŽIA</a>
+            </li>
+            <li>
+                <a href="/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="/html.html">HTML, CSS</a></li>
+                    <li><a href="/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp.html">C#</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contacts.html">KONTAKTAI</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- For mobile -->
+    <input type="checkbox" id="nav_mobile_checkbox" class="nav_mobile_only" />
+    <label for="nav_mobile_checkbox" class="nav_mobile_only">
+        <i class="fas fa-bars" id="burger_btn"></i>
+        <i class="fas fa-times" id="cancel_btn"></i>
+    </label>
+    <nav class="nav_mobile">
+        <ul>
+            <li>
+                <a href="/index.html">PRADŽIA</a>
+            </li>
+            <li>
+                <a href="/cv.html">CV</a>
+            </li>
+            <li>
+                <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
+                <ul>
+                    <li><a href="/html.html">HTML, CSS</a></li>
+                    <li><a href="/js.html">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp.html">C#</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/contacts.html">KONTAKTAI</a>
+            </li>
+
+        </ul>
+    </nav>
+    <!-- End of for mobile -->
+
+    <header class="small-header">
+        <div class="bg-image"></div>
+        <div class="header-text">
+            <h1>Darbai</h1>
+        </div>
+    </header>
+    <main class="gc">
+        <a href="/projektas/html.html" class="gi Hgi Hhtml"></a>
+        <a href="/projektas/js.html" class="gi Hgi Hjs"></a>
+        <a href="/projektas/c_sharp.html" class="gi Hgi Hcs"></a>
+
+    </main>
+
+</body>
+
+</html>
