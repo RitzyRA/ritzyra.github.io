@@ -89,7 +89,6 @@
 
         .hobbies {
             grid-area: section6;
-            justify-items: center;
         }
         .inline {
             justify-content: center;
@@ -115,7 +114,7 @@
                 "section5"
                 "header6"
                 "section6";
-            grid-template-rows: 6rem 10rem 6rem 8rem 6rem 6rem 6rem 8rem 6rem 18rem 6rem 10rem;
+            grid-template-rows: 6rem 10rem 6rem 10rem 6rem 6rem 6rem 10rem 6rem 18rem 6rem 10rem;
             grid-template-columns: 100%;
             overflow: auto;
         }
@@ -125,9 +124,6 @@
         }
         .aboutme {
             margin-left: 0;
-        }
-        .hobbies {
-            justify-items: center;
         }
     }
 
@@ -184,9 +180,9 @@
             <li>
                 <a href="/work_experience.html">DARBAI <i class="fas fa-angle-down"></i></a>
                 <ul>
-                    <li><a href="/html.html">HTML, CSS</a></li>
-                    <li><a href="/js.html">JAVASCRIPT</a></li>
-                    <li><a href="/c_sharp.html">C#</a></li>
+                    <li><a href="/html.html" style="text-indent: 2rem;">HTML, CSS</a></li>
+                    <li><a href="/js.html" style="text-indent: 2rem;">JAVASCRIPT</a></li>
+                    <li><a href="/c_sharp.html" style="text-indent: 2rem;">C#</a></li>
                 </ul>
             </li>
             <li>
@@ -259,10 +255,12 @@
             </ul>
         </section>
         <section class="gi hobbies">
-            <i class="fas inline fa-tv fa-2x"></i> <section>TV, serialai</section>           
-            <i class="inline fas fa-brain fa-2x"></i><section>Protmūšiai</section>
-            <i class="fas inline fa-book-open fa-2x"></i><section>Knygos</section>
-            <i class="fas inline fa-car-alt fa-2x"></i><section>Vairavimas, kelionės</section>
+            <ul>
+                <li>TV, serialai</li>
+                <li>Protmūšiai</li>
+                <li>Knygos</li>
+                <li>Vairavimas, kelionės</li>
+            </ul>
         </section>
         
     </main>
